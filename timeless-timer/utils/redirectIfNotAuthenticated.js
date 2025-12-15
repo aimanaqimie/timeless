@@ -1,4 +1,4 @@
-import { redirect } from "next/server";
+import { redirect } from "next/navigation";
 import { createClient } from "./supabase/server";
 
 export async function redirectIfNotAuthenticated(path = "/login") {
